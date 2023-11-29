@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: deputy_triple_join
+    description: "dbt-core unit test"
+    columns:
+      - name: city
+        description: "The primary key for this join table"
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              to: "{{ref('triple')}}"
+              field: city
