@@ -1,0 +1,15 @@
+dbt_core_demo:
+   outputs:
+     dev:
+       connect_timeout: 300
+       dbname: Test2
+       host: localhost
+       keepalives_idle: 60
+       password: kebir
+       port: 5432
+       retries: 2
+       schema: public
+       threads: 1
+       type: postgres
+       user: postgres
+   target: dev
