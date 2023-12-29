@@ -1,4 +1,4 @@
-Welcome to your new dbt project (Here with **postgres**!
+Welcome to your new dbt project (Here with **postgres**)!
 
 ### Using the starter project
 
